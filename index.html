@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umbrella Customizer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="./assets/loader_icon.svg" />
+    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="container pink-container">
+      <div class="image-container">
+        <img
+          class="umbrella-image"
+          src="./assets/Pink umbrella.png"
+          alt="Pink Umbrella"
+        />
+        <img src="" alt="" class="uploaded-logo" id="uploadlogo" />
+      </div>
+      <div class="info-container">
+        <div class="info-box">
+          <h1 class="heading">Custom Umbrella</h1>
+          <div class="colors-container">
+            <button class="btn pink-button"></button>
+
+            <button class="btn blue-button"></button>
+
+            <button class="btn yellow-button"></button>
+          </div>
+          <h2 class="sub-heading">Customize your umbrella</h2>
+          <h3 class="title">Upload a logo for an instant preview.</h3>
+          <h5 class="sub-title">
+            .png and .jpg files only. Max file size if 5MB.
+          </h5>
+
+          <div>
+            <input
+              type="file"
+              accept="image/*"
+              onchange="loadFile(event)"
+              id="input"
+              class="upload-btn"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

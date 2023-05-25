@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #222222;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.pink-bg {
+  background-color: #d0006f;
+}
+
+.blue-bg {
+  background-color: #00a3e0;
+}
+
+.yellow-bg {
+  background-color: #fed141;
+}
+
+.pink-container {
+  background-color: rgba(208, 0, 111, 0.1);
+}
+
+.blue-container {
+  background-color: rgba(0, 164, 224, 0.1);
+}
+
+.yellow-container {
+  background-color: rgba(254, 210, 67, 0.1);
+}
+
+.image-container {
+  padding-left: 100px;
+  position: relative;
+  flex: 1;
+}
+
+.umbrella-image {
+  width: 70%;
+}
+
+.uploaded-logo {
+  width: 10%;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translate(-140%, 0);
+}
+
+.info-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 70px;
+}
+
+.colors-container {
+  padding: 70px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.pink-button {
+  background-color: #d0006f;
+  border: 5px solid rgba(208, 0, 111, 0.3);
+}
+
+.blue-button {
+  background-color: #00a3e0;
+  border: 5px solid rgba(0, 164, 224, 0.3);
+}
+
+.yellow-button {
+  background-color: #fed141;
+  border: 5px solid rgba(254, 210, 65, 0.3);
+}
+
+.sub-heading {
+  font-size: 30px;
+}
+
+.title {
+  font-size: 25px;
+  line-height: 2;
+  font-weight: 300;
+}
+
+.sub-title {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 20px 0;
+}
+
+.upload-btn {
+  display: block;
+  visibility: hidden;
+}
+
+.upload-btn::before {
+  content: "UPLOAD LOGO";
+  background-color: var(--uplodeBeforeBackColor, #d0006f);
+  visibility: visible;
+  display: block;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.upload-btnhover::before:hover {
+  background-color: #000;
+}
