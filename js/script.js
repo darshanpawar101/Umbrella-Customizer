@@ -26,7 +26,7 @@ pink_button.addEventListener("click", function () {
 });
 blue_button.addEventListener("click", function () {
   uploadbtn.style.setProperty("--uplodeBeforeBackColor", "#00a3e0");
-  umbrella_image.setAttribute("src", "./assets/blue umbrella.png");
+  umbrella_image.setAttribute("src", "./assets/Blue umbrella.png");
   container.classList.remove("yellow-container");
   container.classList.remove("pink-container");
   container.classList.add("blue-container");
